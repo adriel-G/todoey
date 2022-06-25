@@ -1,6 +1,6 @@
 # todo_app
 
-A To Do App
+A To-Do app which allows you to manage tasks that are pending.
 
 ## Getting Started
 
