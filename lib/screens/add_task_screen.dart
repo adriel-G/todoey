@@ -5,13 +5,15 @@ import 'package:todo_app/models/task_data.dart';
 class AddTaskScreen extends StatelessWidget {
   late String newTaskTitle;
 
+  AddTaskScreen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xff757575),
+      color: const Color(0xff757575),
       child: Container(
-        padding: EdgeInsets.all(20.0),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.all(20.0),
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
             topRight: Radius.circular(20.0),
@@ -21,7 +23,7 @@ class AddTaskScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
+            const Text(
               'Add Task',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -34,7 +36,7 @@ class AddTaskScreen extends StatelessWidget {
                 onEditingComplete: () {}, // this prevents keyboard from closing
                 textInputAction: TextInputAction.send,
                 textAlign: TextAlign.center,
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
                 onChanged: (newText) {
                   newTaskTitle = newText;
                 }),
@@ -46,7 +48,7 @@ class AddTaskScreen extends StatelessWidget {
                 Navigator.pop(context);
                 //add tasks
               },
-              child: Text(
+              child: const Text(
                 'Add Task',
                 style: TextStyle(
                   color: Colors.white,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '/models/tasks.dart';
 
 class TaskData extends ChangeNotifier {
-  List<Task> _tasks = [Task(name: 'Example Task')];
+  final List<Task> _tasks = [Task(name: 'Example Task')];
 
   UnmodifiableListView<Task> get tasks {
     return UnmodifiableListView(_tasks);
